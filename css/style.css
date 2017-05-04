@@ -1,0 +1,32 @@
+body {
+  background-color: thistle; }
+
+.play-area {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin: 10% auto;
+  background-color: mistyrose;
+  color: navy; }
+
+.input-style {
+  padding: 20px;
+  margin: 20px auto; }
+
+.tile-container {
+  width: 100%;
+  height: 150px; }
+
+.tile {
+  display: inline-block;
+  width: 50px;
+  height: 100px;
+  background-color: white;
+  color: purple;
+  font-weight: bold;
+  font-size: 40px;
+  border: 3px solid red;
+  text-align: center;
+  margin: 5px; }
+
+/*# sourceMappingURL=style.css.map */
