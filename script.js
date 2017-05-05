@@ -22,8 +22,8 @@ function HangMan() {
 
 	ncb.addEventListener("click", startChallenge)
 	submit.addEventListener("click", function() {
-		input.value = "";
 		checkField(input.value);
+		input.value = "";
 
 	});
 
@@ -44,11 +44,11 @@ function HangMan() {
 	}
 
 	function checkField(letter) {
-
+		
 		var gotMatch = false;
 
 		for (var i = 0; i < currentWord.length; i++) {
-
+			console.log(currentWord[i],letter);
 			if (currentWord[i].toUpperCase() === letter.toUpperCase()) {
 				solvedIndices.push(i);
 				gotMatch = true;
@@ -74,7 +74,7 @@ function HangMan() {
 			console.log("inside loop before if");
 
 			if (solvedIndices.indexOf(i) > -1) {
-				// <
+				
 				console.log("inside if loop");
 				newDiv.innerHTML = currentWord[i];
 			}
