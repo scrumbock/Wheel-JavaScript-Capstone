@@ -1,14 +1,33 @@
 body {
 	background-color: thistle;
+	font-family: 'Russo One', sans-serif;
 }
 
 .play-area {
 	display: block;
-	width: 100%;
+	width: 50%;
 	height: 150px;
 	margin: 10% auto;
 	background-color: mistyrose;
 	color: navy;
+}
+
+.hang-container {
+	width: 50%;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.hang  {
+	margin: 0 auto;
+	padding: 5px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 50px;
+	color: navy;
+}
+
+label {
+	font-size: 33px;
 }
 
 .input-style {
@@ -17,15 +36,15 @@ body {
 }
 
 .tile-container {
-
 	width: 100%;
 	height: 150px;
+	margin: 10px;
 }
 
 .tile {
 	display: inline-block;
 	width: 50px;
-	height: 100px;
+	height: 70px;
 	background-color: white;
 	color: purple;
 	font-weight: bold;
@@ -34,4 +53,24 @@ body {
 	text-align: center;
 	margin: 5px;
 
+}
+
+.submit {
+	width: 200px;
+	height: 40px;
+	font-size: 33px;
+	background-color: navy;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+}
+
+.new-challenge-button {
+	width: 150px;
+	height: 70px;
+	font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+	background-color: red;
+	color: white;
+	padding: 3px;
+	margin: 20px;
 }

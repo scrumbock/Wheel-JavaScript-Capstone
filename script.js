@@ -22,7 +22,9 @@ function HangMan() {
 
 	ncb.addEventListener("click", startChallenge)
 	submit.addEventListener("click", function() {
+		input.value = "";
 		checkField(input.value);
+
 	});
 
 
@@ -54,6 +56,7 @@ function HangMan() {
 		};
 
 		if (gotMatch === true) {
+			console.log("gotMatch");
 			displayWord();		
 		} else {
 			numTries -= 1;
@@ -62,14 +65,17 @@ function HangMan() {
 	}
 
 	function displayWord() {
-
+		console.log("displayWord before HTML");
 		tileCont.innerHTML = "";
-
+		console.log("displayWord after HTML");
 		for (var i = 0; i < currentWord.length; i++) {			
 			var newDiv = document.createElement("div");
 			newDiv.classList.add("tile");
+			console.log("inside loop before if");
 
 			if (solvedIndices.indexOf(i) > -1) {
+				// <
+				console.log("inside if loop");
 				newDiv.innerHTML = currentWord[i];
 			}
 			tileCont.appendChild(newDiv);
