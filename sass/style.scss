@@ -12,9 +12,16 @@ body {
 	color: navy;
 }
 
+img {
+	border: 1px solid navy;
+	border-radius: 75%;
+}
+
 .hang-container {
+	display: flex;
+	flex-direction: row-reverse;
 	width: 50%;
-	height: 100px;
+	height: 50px;
 	margin: 0 auto;
 }
 
@@ -36,7 +43,7 @@ label {
 }
 
 .tile-container {
-	width: 100%;
+	width: 800px;
 	height: 150px;
 	margin: 10px;
 }
@@ -64,9 +71,9 @@ label {
 	font-family: 'Russo One', sans-serif;
 }
 
-.new-challenge-button {
+.new-challenge-button-nz-cities {
 	width: 150px;
-	height: 70px;
+	height: 100px;
 	font-family: 'Russo One', sans-serif;
 	font-size: 20px;
 	background-color: red;
