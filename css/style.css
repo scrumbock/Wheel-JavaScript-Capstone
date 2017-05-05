@@ -12,7 +12,7 @@ body {
 
 img {
   border: 1px solid navy;
-  border-radius: 75%; }
+  border-radius: 20%; }
 
 .hang-container {
   display: flex;
@@ -33,7 +33,7 @@ label {
 
 .input-style {
   padding: 20px;
-  margin: 20px auto; }
+  margin: 0 auto; }
 
 .tile-container {
   width: 800px;
@@ -52,15 +52,27 @@ label {
   text-align: center;
   margin: 5px; }
 
+.black-tile {
+  display: inline-block;
+  width: 50px;
+  height: 70px;
+  background-color: black;
+  color: purple;
+  font-weight: bold;
+  font-size: 40px;
+  border: 3px solid red;
+  text-align: center;
+  margin: 5px; }
+
 .submit {
-  width: 200px;
+  width: 150px;
   height: 40px;
   font-size: 33px;
   background-color: navy;
   color: white;
   font-family: 'Russo One', sans-serif; }
 
-.new-challenge-button-nz-cities {
+.new-challenge-button-nz-cities, .new-challenge-button-bands, .new-challenge-button-ice-cream {
   width: 150px;
   height: 100px;
   font-family: 'Russo One', sans-serif;
